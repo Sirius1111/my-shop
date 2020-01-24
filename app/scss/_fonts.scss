@@ -1,0 +1,26 @@
+@import "_mixins/font-face";
+@import "./libs/font-awesome/fontawesome.scss";
+@import "./libs/font-awesome/solid.scss";
+@import "./libs/font-awesome/brands.scss";
+@import "./libs/font-awesome/regular.scss";
+
+@include font-face("Lato", "../fonts/Lato/Lato-Black", 900);
+@include font-face("Lato", "../fonts/Lato/Lato-BlackItalic");
+@include font-face("Lato-Heavy", "../fonts/Lato/Lato-Heavy",800);
+@include font-face("Lato", "../fonts/Lato/Lato-HeavyItalic");
+@include font-face("Lato-Bold", "../fonts/Lato/Lato-Bold", 700);
+@include font-face("Lato", "../fonts/Lato/Lato-BoldItalic");
+@include font-face("Lato", "../fonts/Lato/Lato-Semibold", 600);
+@include font-face("Lato", "../fonts/Lato/Lato-SemiboldItalic");
+@include font-face("Lato", "../fonts/Lato/Lato-Medium", 500);
+@include font-face("Lato", "../fonts/Lato/Lato-MediumItalic");
+@include font-face("Lato-Regular", "../fonts/Lato/Lato-Regular", 400);
+@include font-face("Lato", "../fonts/Lato/Lato-Italic");
+@include font-face("Lato", "../fonts/Lato/Lato-Light", 300);
+@include font-face("Lato", "../fonts/Lato/Lato-LightItalic");
+@include font-face("Lato", "../fonts/Lato/Lato-Thin", 200);
+@include font-face("Lato", "../fonts/Lato/Lato-ThinItalic");
+@include font-face("Lato", "../fonts/Lato/Lato-Hairline", 100);
+@include font-face("Lato", "../fonts/Lato/Lato-HairlineItalic");
+
+

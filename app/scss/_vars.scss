@@ -1,0 +1,60 @@
+@import "./_mixins/_rem-size.scss";
+@import "./_mixins/_breacpoints.scss";
+
+
+$main-color: #000000;
+$second-color: #ff3448;
+$text-color: #ffffff;
+$border-color: #595959;
+
+$main-font: 'Lato-Regular';
+$second-font: 'Lato-Bold';
+$third-font: 'Lato-Heavy';
+
+@mixin transition($events:all, $time: .2s) {
+  transition: $events $time ease-in-out;
+}
+
+
+
+
+.wrap_main {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+
+.wrap_second {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+.row{
+  display: flex;
+  align-items: center;
+}
+.title{
+  font-weight: 600;
+  font-family: $second-font;
+  font-size: rem(35);
+  margin-bottom: 15px;
+  display: block;
+  text-transform: uppercase;
+  color: $text-color;
+}
+a{
+  text-decoration: none;
+}
+p,a{
+  font-size: rem(14);
+}
+h3{
+  font-size: 35px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+
+

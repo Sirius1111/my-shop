@@ -1,0 +1,91 @@
+@import '../vars';
+@import '../fonts';
+
+.categories{
+    width: 100%;
+    position: relative;
+    padding: 60px 0;
+    .wrap_second{
+        .categories__row{
+            justify-content: center;
+            flex-wrap: wrap;
+            .category{
+                max-width: 380px;
+                height: 300px;
+                position: relative;
+                .categor__img{
+                    width: 100%;
+                    height: 100%;
+                    filter: brightness(.6);
+                    img{
+                        object-fit: cover;
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+                .category__title{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    a{
+                        background: rgba($main-color, .8);
+                        border: 1px dashed #fff;
+                        display: block;
+                        padding: 15px 30px;
+                        font-size: rem(25);
+                        color: $text-color;
+                        text-transform: uppercase;
+                        text-align: center;
+                    }
+                }
+                &:hover{
+                    .categor__img{
+                        filter: brightness(.8);
+                    }
+                }
+            }
+        }
+    }
+   
+}
+
+
+ // ≥1200px
+@include media-breakpoint-down(lg){
+    .categories .wrap_second .categories__row .category{
+        max-width: 300px;
+    }
+}
+
+// ≥992px
+@include media-breakpoint-down(md){
+    .categories .wrap_second .categories__row .category{
+        max-width: 350px;
+        height: 250px;
+    }
+}
+
+// ≥768px
+@include media-breakpoint-down(sm){
+    .categories .wrap_second {
+        padding: 0 10px; 
+        .categories__row .category{
+            max-width: 100%;
+            height: 300px;
+        }
+    }
+}
+    
+// ≥368px
+@include media-breakpoint-down(ss){
+    .categories .wrap_second {
+        .categories__row .category{
+            height: 250px;
+        }
+    }
+}
+// 0    
+@include media-breakpoint-down(xs){
+   
+}

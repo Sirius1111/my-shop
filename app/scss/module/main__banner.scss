@@ -1,0 +1,44 @@
+@import '../vars';
+@import '../fonts';
+
+.main__banner{
+    width: 100%;
+    min-height: 600px;
+    max-height: 600px;
+}
+.webp .main__banner{
+    background:  url(../img/webp/back_1.webp) 10% 50% / cover no-repeat;
+
+}
+.no-webp .main__banner{
+    background:  url(../img/back_1.png) 10% 50% / cover no-repeat;
+}
+
+
+    // ≥1200px
+    @include media-breakpoint-down(lg){
+    }
+    
+    // ≥992px
+    @include media-breakpoint-down(md){
+
+    }
+
+    // ≥768px
+    @include media-breakpoint-down(sm){
+        .main__banner{
+            min-height: 350px;
+            max-height: inherit;
+            background-size: cover;
+        }
+        
+    }
+        
+    // ≥368px
+    @include media-breakpoint-down(ss){
+
+    }
+    // 0    
+    @include media-breakpoint-down(xs){
+       
+    }
